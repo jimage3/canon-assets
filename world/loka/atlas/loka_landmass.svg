@@ -2,7 +2,8 @@
 <!-- Created with Grafika (https://www.grafika.cc/) -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3....9" viewBox="0 0 1080 1080" preserveAspectRatio="xMidYMid meet">
 	<rect x="0" y="0" width="1080" height="1080" fill="#FFFFFF" />
-	<g transform="matrix(1, 0, 0="1, 0, 0, 1, 0, 0)">
+	<g transform="matrix(1, 0, 0 
+		= 1, 0, 0, 1, 0, 0)">
 		<g id="Landmass_Claric" fill="#f5f5f5" stroke="#2b2b2b" stroke-width="0.6">
 			<path d="M140 220L145 215L150 220L155 225L160 228L162 233L158 236L152 235L148 232L143 228Z"/>
 			<path d="M165 240L172 238L178 242L180 248L176 252L169 253L163 248Z"/>
