@@ -1,4 +1,35 @@
+# ======================================================
+# Canon Assets Repository Attributes
+# ======================================================
+
+# 🌍 Image / Map data
 *.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.svg filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+
+# 🗺️ Vector / SVG maps
+*.svg text eol=lf
+
+# 🧾 JSON / Metadata
+*.json text eol=lf
+
+# 📘 Documents
+*.md text eol=lf
+*.txt text eol=lf
+
+# 🧠 Canon configuration
+*.yaml text eol=lf
+*.yml text eol=lf
+*.ini text eol=lf
+
+# 🧰 Scripts (Python / JS / Shell)
+*.py text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+
+# 🔒 Git ignore patterns
+.gitattributes text eol=lf
+.gitignore text eol=lf
