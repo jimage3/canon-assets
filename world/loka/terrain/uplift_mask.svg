@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4096 2048" width="4096" height="2048">
+  <defs><style>
+    .bg{fill:#000}
+    .ridge{fill:#fff;opacity:.9}
+    .high{fill:#ddd;opacity:.8}
+    .mid{fill:#aaa;opacity:.7}
+    .low{fill:#666;opacity:.6}
+    .note{fill:#fffa;font-family:system-ui,sans-serif;font-size:18px}
+  </style></defs>
+  <rect class="bg" x="0" y="0" width="4096" height="2048"/>
+  <!-- ตัวอย่าง: <path class="ridge" d="M100 900 L500 870 L800 930 Z"/> -->
+  <text class="note" x="24" y="40">uplift_mask.svg — วาดชั้นระดับความสูง: ridge/high/mid/low</text>
+</svg>
