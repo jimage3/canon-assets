@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4096 2048" width="4096" height="2048">
-  <defs><style>
-    .grid{stroke:#444;stroke-width:.5;fill:none;opacity:.35}
-    .plate{fill:none;stroke:#00e0ff;stroke-width:2}
-    text{fill:#aee;font-family:system-ui,sans-serif;font-size:22px}
-  </style></defs>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 4096 2048" width="4096" height="2048">
+  <defs>
+    <style>
+      .grid{stroke:#40444a;stroke-width:.5;fill:none;opacity:.35}
+      .coast{opacity:.25}
+      .edge{fill:none;stroke:#00e0ff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .edge.convergent{stroke:#ff6d6d}
+      .edge.divergent{stroke:#7df0ff}
+      .edge.transform{stroke:#ffd166}
+      .label{fill:#aee;font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:22px}
+      .hint {fill:#9aa3b2;font-size:18px}
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="4096" height="2048" fill="#0b0e12"/>
+
+  <!-- light grid 256 px -->
   <g class="grid">
     <g>
       <line x1="256" y1="0" x2="256" y2="2048"/><line x1="512" y1="0" x2="512" y2="2048"/>
@@ -24,14 +38,60 @@
     </g>
   </g>
 
-  <g id="plate_01" class="plate"><title>claric</title></g>
-  <g id="plate_02" class="plate"><title>norvian</title></g>
-  <g id="plate_03" class="plate"><title>briot</title></g>
-  <g id="plate_04" class="plate"><title>ocus</title></g>
-  <g id="plate_05" class="plate"><title>dravon</title></g>
-  <g id="plate_06" class="plate"><title>tania</title></g>
-  <g id="plate_07" class="plate"><title>hestia</title></g>
-  <g id="plate_08" class="plate"><title>hereska</title></g>
+  <!-- overlay landmass (ปรับ URL ถ้าไม่ตรงของคุณ) -->
+  <image class="coast"
+    x="0" y="0" width="4096" height="2048"
+    xlink:href="https://raw.githubusercontent.com/jimage3/canon-assets/main/world/loka/atlas/loka_landmass_canonized.svg" />
 
-  <text x="24" y="40">plates.svg — 4096×2048</text>
+  <!-- edges -->
+  <g id="edges">
+    <!-- เหนือ: Norvian ↔ Ocean_N (divergent) สันกลางมหาสมุทรเหนือ -->
+    <path id="edge_norvian_ocean_n" class="edge divergent"
+      d="M 1024 180 C 1500 220, 2200 240, 3000 220" />
+    <!-- เหนือซีกซ้าย: Briot ↔ Ocean_N (divergent) -->
+    <path id="edge_briot_ocean_n" class="edge divergent"
+      d="M 420 260 C 700 280, 900 280, 1200 260" />
+    <!-- ขั้วเหนือด้านขวา: Claric ↔ Norvian (transform) -->
+    <path id="edge_claric_norvian" class="edge transform"
+      d="M 2800 300 C 3000 340, 3200 420, 3400 520" />
+
+    <!-- ละติจูดสูงตอนบน: Briot ↔ Ocus (transform) -->
+    <path id="edge_briot_ocus" class="edge transform"
+      d="M 900 520 C 1500 520, 2100 540, 2700 560" />
+
+    <!-- ตะวันออก: Ocus ↔ Dravon (convergent) แนวเขาหลัก -->
+    <path id="edge_ocus_dravon" class="edge convergent"
+      d="M 2500 700 C 2700 820, 2850 960, 2950 1140" />
+
+    <!-- เอียงลงตะวันออกเฉียงใต้: Dravon ↔ Tania (convergent) -->
+    <path id="edge_dravon_tania" class="edge convergent"
+      d="M 2400 1200 C 2600 1340, 2800 1500, 3000 1660" />
+
+    <!-- ล่าง: Tania ↔ Hestia (convergent) -->
+    <path id="edge_tania_hestia" class="edge convergent"
+      d="M 1800 1760 C 2100 1800, 2400 1860, 2700 1900" />
+
+    <!-- ล่างซ้ายนอกฝั่ง: Hestia ↔ Ocean_W (transform) -->
+    <path id="edge_hestia_ocean_w" class="edge transform"
+      d="M 300 1700 C 550 1740, 800 1780, 1050 1820" />
+
+    <!-- ล่างขวานอกฝั่ง: Tania ↔ Ocean_E (transform) -->
+    <path id="edge_tania_ocean_e" class="edge transform"
+      d="M 3100 1700 C 3300 1760, 3500 1820, 3720 1860" />
+
+    <!-- ขั้วใต้: Hereska ↔ Ocean_S (divergent) (สันกลางมหาสมุทรใต้) -->
+    <path id="edge_hereska_ocean_s" class="edge divergent"
+      d="M 1000 1980 C 1800 1960, 2600 1960, 3400 1980" />
+
+    <!-- ขั้วใต้: Hestia ↔ Hereska (divergent) -->
+    <path id="edge_hestia_hereska" class="edge divergent"
+      d="M 600 1880 C 850 1940, 1100 1980, 1400 2010" />
+
+    <!-- ขั้วใต้: Tania ↔ Hereska (divergent) -->
+    <path id="edge_tania_hereska" class="edge divergent"
+      d="M 2500 1880 C 2800 1930, 3100 1970, 3400 2010" />
+  </g>
+
+  <text class="label" x="24" y="40">plates.svg — Loka tectonic boundaries (4096×2048)</text>
+  <text class="hint"  x="24" y="70">สีแดง=convergent, ฟ้าอ่อน=divergent, เหลือง=transform • ขยับจุดควบคุมให้ทาบแนวทวีปจริงได้เลย</text>
 </svg>
