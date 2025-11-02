@@ -1,0 +1,5 @@
+{
+  "convergent": { "peak": 255, "inner": 210, "outer": 140, "halfwidth_px": 18 },
+  "transform":  { "peak": 160, "inner": 110, "outer":  80, "halfwidth_px": 10 },
+  "divergent":  { "peak": 110, "inner":  80, "outer":  60, "halfwidth_px": 12, "note":"บนบกยกน้อย ใต้ทะเลเป็นสันกลาง" }
+}
