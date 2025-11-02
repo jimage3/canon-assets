@@ -1,0 +1,10 @@
+[
+  { "id": "plate_01", "name": "claric",  "type": "continental", "motion": [-8, 2] },
+  { "id": "plate_02", "name": "norvian", "type": "continental", "motion": [-5, 1] },
+  { "id": "plate_03", "name": "briot",   "type": "continental", "motion": [ 2, 0] },
+  { "id": "plate_04", "name": "ocus",    "type": "continental", "motion": [ 4, 0] },
+  { "id": "plate_05", "name": "dravon",  "type": "continental", "motion": [ 6, 1] },
+  { "id": "plate_06", "name": "tania",   "type": "continental", "motion": [ 1,-1] },
+  { "id": "plate_07", "name": "hestia",  "type": "continental", "motion": [-3, 0] },
+  { "id": "plate_08", "name": "hereska", "type": "continental", "motion": [ 0,-2] }
+]
