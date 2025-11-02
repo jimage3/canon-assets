@@ -1,0 +1,14 @@
+[
+  { "id":"edge_norvian_ocean_n", "between":["plate_norvian","plate_ocean_n"], "type":"divergent",  "strength":0.6 },
+  { "id":"edge_briot_ocean_n",   "between":["plate_briot","plate_ocean_n"],   "type":"divergent",  "strength":0.5 },
+  { "id":"edge_claric_norvian",  "between":["plate_claric","plate_norvian"],  "type":"transform",  "strength":0.5 },
+  { "id":"edge_briot_ocus",      "between":["plate_briot","plate_ocus"],      "type":"transform",  "strength":0.4 },
+  { "id":"edge_ocus_dravon",     "between":["plate_ocus","plate_dravon"],     "type":"convergent", "strength":0.85 },
+  { "id":"edge_dravon_tania",    "between":["plate_dravon","plate_tania"],    "type":"convergent", "strength":0.6 },
+  { "id":"edge_tania_hestia",    "between":["plate_tania","plate_hestia"],    "type":"convergent", "strength":0.75 },
+  { "id":"edge_hestia_ocean_w",  "between":["plate_hestia","plate_ocean_w"],  "type":"transform",  "strength":0.5 },
+  { "id":"edge_tania_ocean_e",   "between":["plate_tania","plate_ocean_e"],   "type":"transform",  "strength":0.4 },
+  { "id":"edge_hereska_ocean_s", "between":["plate_hereska","plate_ocean_s"], "type":"divergent",  "strength":0.7 },
+  { "id":"edge_hestia_hereska",  "between":["plate_hestia","plate_hereska"],  "type":"divergent",  "strength":0.5 },
+  { "id":"edge_tania_hereska",   "between":["plate_tania","plate_hereska"],   "type":"divergent",  "strength":0.5 }
+]
