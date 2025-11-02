@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4096 2048" width="4096" height="2048">
-  <defs>
-    <style>
-      .grid { stroke:#444; stroke-width:0.5; fill:none; opacity:.35 }
-      .plate { fill:none; stroke:#00e0ff; stroke-width:2; }
-      text { fill:#aee; font-family:system-ui,sans-serif; font-size:22px; }
-    </style>
-  </defs>
-  <!-- grid every 256 px -->
+  <defs><style>
+    .grid{stroke:#444;stroke-width:.5;fill:none;opacity:.35}
+    .plate{fill:none;stroke:#00e0ff;stroke-width:2}
+    text{fill:#aee;font-family:system-ui,sans-serif;font-size:22px}
+  </style></defs>
   <g class="grid">
-    <!-- vertical -->
     <g>
-      <!-- 16 lines -->
       <line x1="256" y1="0" x2="256" y2="2048"/><line x1="512" y1="0" x2="512" y2="2048"/>
       <line x1="768" y1="0" x2="768" y2="2048"/><line x1="1024" y1="0" x2="1024" y2="2048"/>
       <line x1="1280" y1="0" x2="1280" y2="2048"/><line x1="1536" y1="0" x2="1536" y2="2048"/>
@@ -21,7 +16,6 @@
       <line x1="3328" y1="0" x2="3328" y2="2048"/><line x1="3584" y1="0" x2="3584" y2="2048"/>
       <line x1="3840" y1="0" x2="3840" y2="2048"/>
     </g>
-    <!-- horizontal -->
     <g>
       <line x1="0" y1="256" x2="4096" y2="256"/><line x1="0" y1="512" x2="4096" y2="512"/>
       <line x1="0" y1="768" x2="4096" y2="768"/><line x1="0" y1="1024" x2="4096" y2="1024"/>
@@ -30,7 +24,6 @@
     </g>
   </g>
 
-  <!-- draw your plates inside these groups -->
   <g id="plate_01" class="plate"><title>claric</title></g>
   <g id="plate_02" class="plate"><title>norvian</title></g>
   <g id="plate_03" class="plate"><title>briot</title></g>
